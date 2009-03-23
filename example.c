@@ -5,7 +5,7 @@
 
 #include "logging.h"
 
-// This code is released in the Public Domain (no restrictions, no support 100% free).
+// This code is released in the Public Domain (no restrictions, no support, 100% free).
 
 static void usage(const char* prog) {
   fprintf(stderr,
