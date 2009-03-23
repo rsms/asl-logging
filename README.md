@@ -15,7 +15,7 @@ When logging.h is used in Objective-C, there are an extra set of macros defined 
 
 ## Objective-C ASLLogger
 
-The `objc` directory contain a Objective-C OOP library, designed in Apple Foundation fashion. The ASLLogger provide, in contrast to the `logging.h` convenience macros, thread safety. ASLLoggers and ASLConnections are stored in thread-local space. However; passing instances of ASLLogger between threads will cause problems. You should instead aquire new loggers for each thread using +(ASLLogger *)loggerForModule:(NSString *)m.
+The `objc` directory contain a Objective-C OOP library, designed in Apple Foundation fashion. The ASLLogger provide, in contrast to the `logging.h` convenience macros, thread safety. ASLLoggers and ASLConnections are stored in thread-local space. However; passing instances of ASLLogger between threads will cause problems. You should instead aquire new loggers for each thread using `+(ASLLogger *)loggerForModule:(NSString *)m`.
 
 You can build and test the `objc/example.m` program:
 
